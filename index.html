@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi ToDo app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Moo+Lah+Lah&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Mi ToDo App</h1>
+
+        <div class="formulario"> 
+            <input id="entradaTarea" type="text" placeholder="Escribe una tarea"> 
+             <button id="botonAgregar" >Añadir</button>
+        </div>
+        <ul id="listaTareas"></ul>
+        <p id="contadorTareas">Total Tareas: 0 | Pendientes: 0 | Completadas: 0</p>
+        <button class="EliminarCompletadas" id="botonEliminarCompletadas"> 🧹 Eliminar Completadas 🧹</button>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

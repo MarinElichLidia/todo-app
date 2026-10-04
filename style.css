@@ -1,0 +1,108 @@
+/*BASICO*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ESTILO GENERAL DE LA PÁGINA*/
+body{
+    font-family: Arial, sans-serif; /*estilo por defecto a la pag*/
+    background: #d8f1d8 ; /*fondo de toda la pag*/
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+/* CAJA PRINCIPAL */
+.contenedor{
+    background: rgb(134, 157, 137);
+    width: 100%; /*indica que la pag intentará ocupar todo el ancho posibl*/
+    max-width: 600px; /*con esto limita el ancho hasta 600*/
+    padding: 30px; /*Añade espacio interior entre el borde de la caja y su contenido.*/
+    border-radius: 20px;
+    box-shadow:  0 10px 30px rgba(33, 57, 43, 0.1);
+}
+
+/* TITULO PRINCIPAL*/
+h1{
+   font-family: "Kablammo", system-ui;
+   font-size: 40px;
+   text-align: center;
+   margin-bottom: 30px; /*añade un espacio debajo del titulo*/
+   color: #2b3d04;
+}
+
+/*ESTILO AL FORMULARIO*/
+.formulario{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+input{
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid  #03301b;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+button{
+    padding: 12px 20px;
+    background: #c2e07d;
+    color:#590f0f;
+    border: 2px solid #03301b;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    background:#8aab3e;
+    border: 2px solid #0f804b ;
+}
+input:focus {
+    border-color: #0f804b;
+}
+ul{
+    list-style: none; /*quita pntos negros de las listas*/
+    margin-top: 20px; 
+    font-style: italic;
+}
+li{
+    background: #d8f1d8;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.boton-eliminar{
+    padding: 5px 10px;
+    background: #ca411f;
+    color:#e4ce0b;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.boton-eliminar:hover{
+     background:#ff3300;
+     border: 1px solid #000000;
+     transform: scale(1.05);
+}
+.completada{
+    text-decoration: line-through;
+    opacity: 0.5;
+    color: red;
+}
+
+.EliminarCompletadas{
+    margin-top: 2%;
+    background-color: #c2e07d;
+    color: #590f0f;
+}
